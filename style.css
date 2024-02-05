@@ -1,0 +1,13 @@
+.page-content{
+    width: 80%;
+    padding: 20px;
+}
+.desDiv{
+    width: 50%;
+}
+.mdl-textfield{
+    display: inline-block;
+}
+.page-content button{
+border-radius: 10px;
+}

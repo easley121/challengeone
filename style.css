@@ -1,13 +1,16 @@
-.page-content{
-    width: 80%;
+.mdl-layout__content{
+    width: 100%;
     padding: 20px;
 }
-.desDiv{
-    width: 50%;
+.mdl-grid{
+    width: 70%;
+    margin: 0 auto 0 auto;
 }
-.mdl-textfield{
-    display: inline-block;
-}
-.page-content button{
-border-radius: 10px;
+
+.mdl-button{
+    position: relative;
+    display: inline;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
 }

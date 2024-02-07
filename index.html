@@ -12,54 +12,98 @@
   </head>
 
   <body>
-            <header class="mdl-layout__header mdl-layout__header--waterfall">
-              <!-- Top row, always visible -->
-              <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <span class="mdl-layout-title">Challenge 1 Oracle One</span>
-                <div class="mdl-layout-spacer"></div>
-              </div>
-              <!-- Bottom row, not visible on scroll -->
-              <div class="mdl-layout__header-row">
-                <div class="mdl-layout-spacer"></div>
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+      <!-- Title -->
+        <span class="mdl-layout-title">Challenge 1 Oracle One</span>
+          <div class="mdl-layout-spacer"></div>
+      </div>
+      <!-- Bottom row, not visible on scroll -->
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
                 
-            </header>
-            
-        
-            <main class="mdl-layout__content">
-              <div class="page-content">
-                <div>
-                <!-- Floating Multiline Textfield -->
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                        <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                        <label class="mdl-textfield__label" for="sample5">Que texto deseas encriptar?</label>
-                        </div>
-                    </form>
-                </div>  
-                <div class="desDiv">
-                    <!-- Floating Multiline Textfield -->
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield">
-                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-                            <label class="mdl-textfield__label" for="sample5">Que texto deseas desencriptar?</label>
-                            </div>
-                        </form>
-                    </div>  
-                <div>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        Encriptar
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        Desencriptar
-                    </button>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Texto </h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Aqui va el texto resultado
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Clear Text
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                  <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                    <label class="mdl-textfield__label" for="sample5">Que texto deseas encriptar?</label>
+                    </div>
+                  </form>
+                  </div>
                 </div>
-            </div>
-            </main>
-          
-    
-    <footer>
 
-    </footer>
-  </body>
+                <div class="mdl-cell--2-col-phone">
+
+                </div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                      <h2 class="mdl-card__title-text">Texto</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      Aqui va el texto desencriptado
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Clear Text
+                      </a>
+                    </div>
+                  </div>
+                  <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                    <label class="mdl-textfield__label" for="sample5">Que texto deseas desencriptar?</label>
+                    </div>
+                </form>
+                </div>
+
+    </div>
+    <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                  Encriptar
+                  </button>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                  Desencriptar
+                </button>
+              </div>
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                    Copiar
+                  </button>
+                </div>
+    </div>
+  </main>
+  <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">
+          Primer Challenge de Alura
+        </div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">Datos</a></li>
+          <li><a href="#">privacidad</a></li>
+        </ul>
+      </div>
+  </footer>
+</body>
 </html>

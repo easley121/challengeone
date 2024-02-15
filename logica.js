@@ -24,25 +24,25 @@ function validateInput(element) {
 // Función para encriptar el texto ingresado por el usuario
 function encryptText() {
   // Obtiene el texto ingresado por el usuario desde el campo de entrada correspondiente
-  const inputText = document.getElementById("inputEncrypt").value;
+  const inputText = document.getElementById("entradaTexto").value;
   
   // Llama a la función processText para encriptar el texto utilizando el mapa de encriptación
   const encryptedText = processText(inputText, encryptionMap);
   
   // Muestra el resultado de la encriptación en la interfaz de usuario
-  document.getElementById("encryptionResult").innerText = encryptedText;
+  document.getElementById("result").innerText = encryptedText;
 }
 
 // Función para desencriptar el texto ingresado por el usuario
 function decryptText() {
   // Obtiene el texto ingresado por el usuario desde el campo de entrada correspondiente
-  const inputText = document.getElementById("inputDecrypt").value;
+  const inputText = document.getElementById("entradaTexto").value;
   
   // Llama a la función processText para desencriptar el texto utilizando el mapa de desencriptación
   const decryptedText = processText(inputText, decryptionMap);
   
   // Muestra el resultado de la desencriptación en la interfaz de usuario
-  document.getElementById("decryptionResult").innerText =  decryptedText;
+  document.getElementById("result").innerText =  decryptedText;
 }
 
 
@@ -84,8 +84,6 @@ function processText(inputText, map) {
 
 //Funcion para borrar el texto de todos los elementos
 function clearAllText() {
-  document.getElementById("inputEncrypt").value = "";
-  document.getElementById("inputDecrypt").value = "";
-  document.getElementById("encryptionResult").innerText = "";
-  document.getElementById("decryptionResult").innerText = "";
+  document.getElementById("entradaTexto").value = "";
+  document.getElementById("result").innerText = "";
 }

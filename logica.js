@@ -87,3 +87,23 @@ function clearAllText() {
   document.getElementById("entradaTexto").value = "";
   document.getElementById("result").innerText = "";
 }
+//Funcion para mostar el Snackbar
+function mensajeEnSnackbar(mensaje) {
+  var snackbarContainer = document.querySelector('#toast');
+  var data = { message: mensaje };
+  snackbarContainer.MaterialSnackbar.showSnackbar(data);
+}
+//Funcion del boton Copiar
+function copiarTexto() {
+  //Variable para obtener el texto del Textarea
+  var copiado = document.getElementById('result').value;
+  //API para copiar al portapapeles
+  navigator.clipboard.writeText(copiado)
+    //llama a la funcion del Snackbar y despliega el texto
+    .then(function() {
+      mensajeEnSnackbar('El texto copiado es: ' + copiado);
+    })
+    .catch(function(err) {
+      mensajeEnSnackbar('Error al copiar el texto: ' + err);
+    });
+}

@@ -31,6 +31,11 @@
 .mdl-textfield__label{
     font-size: 2lvh;
 }
+.mdl-textfield__input{
+    font-size: 2lvh;
+    font-weight: bolder;
+    
+}
 .mdl-card--border{
     width: 98%;
     margin: 0 auto 0 auto;
@@ -53,3 +58,10 @@
     bottom: 0%;
     height: min-content;
 }
+
+.demo-card-wide > .mdl-card__title {
+    font-weight: bolder;
+    color: #fff;
+    height: 190px;
+    background: url('img/reg-and-faputa-pixelart-v0-gh2ve5le6kla1.png') top / cover;
+  }
